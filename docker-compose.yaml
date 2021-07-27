@@ -1,0 +1,12 @@
+version: '3.4'
+
+services:
+  nuxt:
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - type: bind
+        source: "./"
+        target: "/usr/src/"
